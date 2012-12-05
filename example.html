@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>tubeswap.js</title>
+		<style type="text/css">
+			.embed {
+				background: pink;
+				cursor: pointer;
+				height: 180px;
+				left: 50%;
+				margin: -90px 0 0 -160px;
+				position: absolute;
+				text-align: center;
+				top: 50%;
+				width: 320px;
+			}
+			.text {
+				line-height: 180px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="embed" data-video="fljKx9nvrL4">
+			<div class="text">CLICK ME!</div>
+		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="tubeswap.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.embed').tubeswap({
+					'color': 'white',
+					'theme': 'light'
+				}, function() {
+					console.log(this);
+				});
+			});
+		</script>
+	</body>
+</html>
